@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float knockbackDuration = 0.5f;
     [SerializeField] float knockbackForce = 5f;
     [SerializeField] float upwardForce = 5f;
-    //[SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSourceMusic;
     private bool isMoving;
     private Rigidbody2D rb;
     private bool isKnockbackActive = false;
@@ -78,7 +79,8 @@ public class PlayerController : MonoBehaviour
     }
     private IEnumerator KillPlayer()
     {
-        //audioSource.Play();
+        audioSourceMusic.Stop();
+        audioSource.Play();
         PlayerController playerController = GetComponent<PlayerController>();
         playerController.enabled = false;
         Vector2 knockbackDirection = -transform.up;

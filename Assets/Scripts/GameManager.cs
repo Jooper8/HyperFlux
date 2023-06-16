@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreText, highScoreText;
     private static GameManager instance;
     [SerializeField] GameObject gameOver;
-
     public static GameManager Instance
     {
         get
@@ -58,7 +57,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log(bestScore);
         if (bestScore > PlayerPrefs.GetInt("BestScore"))
         {
             PlayerPrefs.SetInt("BestScore", bestScore);
