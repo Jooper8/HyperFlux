@@ -36,7 +36,7 @@ Um projeto realizado na Unity para Android. Um jogo de arcade simples com o esti
 [ApkPure](https://apkpure.com/p/com.JooperStudio.HyperFlux)
 
 ## Outros Links
-[Linkedin](https://www.linkedin.com/in/frederico-proen%C3%A7a-b700bb211/)
+[LinkedIn](https://www.linkedin.com/in/frederico-proen%C3%A7a-b700bb211/)
 
 ## Pré-requisitos ⚠️    
 Mínimo:
